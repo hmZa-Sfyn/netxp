@@ -63,8 +63,8 @@ def main():
         print(f"Committed → {commit_msg}")
 
         # Push (to master - old name, many repos now use main)
-        git("push", "origin", "master")
-        print("Pushed to origin/master")
+        ##git("push", "origin", "master")
+        ##print("Pushed to origin/master")
 
     except subprocess.CalledProcessError:
         print("\nGit operations failed - stopping here.")
@@ -75,4 +75,7 @@ def main():
 
 
 if __name__ == "__main__":
-    exit(main())
+    for x in range(1,999): 
+        main()
+
+    exit(0)
